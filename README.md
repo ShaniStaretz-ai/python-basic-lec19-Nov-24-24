@@ -30,20 +30,33 @@
     s1:set ={1,2,3}
     ```
     * functions with the data (like in sql):
-        * set1.intersection(set2)- the shared between 2 sets # = set1 & set2
+        * set1.intersection(set2)- the shared between 2 sets
+            * set1 & set2
         * set1.isdisjoint(s2)- returns True if there are **no shared items** between 2 sets, else return False
-        * set1.issubset(s2)- if set1 is sub set of set2 (check by values and size)  == set1 <= s2 
-        * set1 < s2= if euqal will return False, because it's smaller and not equal too.
-        * set1.issuperset(s2)= opposite from subset = set1>=s2
-        * set1>s2 - if s2 is subset of set1
+        * set1.issubset(s2)- if set1 is sub set of set2 (check by values and size)  == set1 <= s2
+            * set1 < s2= if equal will return False, because it's smaller and not equal too.
+        * set1.issuperset(s2)= opposite from subset = set1>=s2, set1 contains s2
+            * set1>s2 - if set1 contains s2
+        * set1.difference(s2)= returns not in the shared items= exist only in set1 and not in s2
+            * set1-s2
+        * symmetric_difference()= the opposite of & both sets without the shared items
+            * set1 ^ s2
+        * unite:
+            * set1.update(s2)- not return
+            * set1.union(s2) - return new set with both sets values.
+            * set1 |s2
+        * frozenset: set can't be changed. 
     * len
     * copy - deep copy
     * clear empty set look like set()
     * access:
         * not with indexes (s1[0]), don't have permanent location in the set, there is no use in the index.
+        * is in: 2 in set1
     * convert list to set: set(list)
+    * remove value from set:
+        * s1.remove(2)
+        * s1.pop()= random remove, returns the removed value (cannot set().pop()).
     * automatically minimized the duplicate items and sort the remains.
-    
-## extra subjects:
 
-    * not subscriptable= not working with indexes.
+## extra subjects:
+* not subscriptable= not working with indexes.
