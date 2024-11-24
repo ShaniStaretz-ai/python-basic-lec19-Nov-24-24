@@ -20,3 +20,4 @@ while True:
     li.append((datetime.now(), name))# or tuple([now,name])
 for index,(time,name) in enumerate(li):
     print(f"{index}: {name} {time.strftime("%H:%M")}",end=" ")
+
